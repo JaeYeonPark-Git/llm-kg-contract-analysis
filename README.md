@@ -109,7 +109,13 @@ npm run dev
 ## 🅿️ 파이프라인 개요 
 <img width="3840" height="2126" alt="Image" src="https://github.com/user-attachments/assets/51aa53c4-a17a-4a2f-9536-3064f042c458" />
 
-## 📒 참고 문헌
+## 📒 참고 문헌 (References)
+본 프로젝트는 다음의 핵심 선행 연구들을 기반으로 합니다.
 
-- AutoSchemaKG: Autonomous Knowledge Graph Construction through Dynamic Schema Induction from Web-Scale Corpora
-- Automating construction contract review using knowledge graph-enhanced large language models
+Zheng, C., Wong, S., Su, X., Tang, Y., Nawaz, A., & Kassem, M. (2023). Automating construction contract review using knowledge graph-enhanced large language models. arXiv preprint arXiv:2309.12132.
+
+요약: LLM과 지식 그래프(KG)를 통합하여 계약서의 위험 식별 정확도와 해석 가능성을 향상시키는 GraphRAG 프레임워크를 제안합니다.
+
+Bai, J., Fan, W., Hu, Q., et al. (2025). AutoSchemaKG: Autonomous Knowledge Graph Construction through Dynamic Schema Induction from Web-Scale Corpora. arXiv preprint arXiv:2505.23628.
+
+요약: 사전 정의된 스키마 없이, LLM을 활용하여 텍스트에서 직접 지식 트리플(knowledge triples)을 추출하고 스키마를 유도하는 자율적인 KG 구축 프레임워크를 제안합니다.
