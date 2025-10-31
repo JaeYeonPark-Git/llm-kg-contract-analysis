@@ -14,7 +14,8 @@
 
 ## 🏛️ 시스템 아키텍처
 
-\<img width="1904" height="1793" alt="System Architecture Diagram" src="[https://github.com/user-attachments/assets/442cd4e7-4193-4743-8fd0-78a1cfd75e69](https://github.com/user-attachments/assets/442cd4e7-4193-4743-8fd0-78a1cfd75e69)" /\>
+<img width="1904" height="1793" alt="Image" src="https://github.com/user-attachments/assets/442cd4e7-4193-4743-8fd0-78a1cfd75e69" />
+
 
 ## 🚀 주요 기능
 
@@ -25,7 +26,7 @@
 
 ## 🅿️ 핵심 파이프라인
 
-\<img width="3840" height="2126" alt="Data Pipeline Architecture" src="[https://github.com/user-attachments/assets/51aa53c4-a17a-4a2f-9536-3064f042c458](https://github.com/user-attachments/assets/51aa53c4-a17a-4a2f-9536-3064f042c458)" /\>
+<img width="3840" height="2126" alt="Image" src="https://github.com/user-attachments/assets/51aa53c4-a17a-4a2f-9536-3064f042c458" />
 
 ## 🛠️ 기술 스택
 
