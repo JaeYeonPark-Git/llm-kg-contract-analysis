@@ -109,6 +109,14 @@ pnpm run dev
 
 ---
 
+## 🏆 주요 성과 (Awards)
+
+본 프로젝트는 **2025 서초 AI 칼리지**에서 **우수상**을 수상하였습니다.
+
+![서초 AI 칼리지 우수상](./assets/award_certificate.png)
+
+---
+
 ## 📜 학술 포스터 (Academic Poster)
 
 프로젝트의 전체 아키텍처와 결과를 요약한 포스터입니다.
