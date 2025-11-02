@@ -12,6 +12,14 @@
 
 -----
 
+## 📜 학술 포스터 (Academic Poster)
+
+프로젝트의 전체 아키텍처와 결과를 요약한 포스터입니다.
+
+*아래 이미지를 클릭하면 고해상도 PDF로 보실 수 있습니다.*
+
+[![Project Poster](./assets/poster_preview.png)](./assets/poster_full.pdf)
+
 ## 🏛️ 시스템 아키텍처
 
 <img width="1904" height="1793" alt="Image" src="https://github.com/user-attachments/assets/442cd4e7-4193-4743-8fd0-78a1cfd75e69" />
