@@ -6,24 +6,19 @@
 [](https://vitejs.dev/)
 [](https://www.python.org/)
 
-**2025 서초 AI 칼리지 리걸케어팀(박재연, 최준호)의 Full-stack 프로젝트입니다.**
+**2025 서초 AI 칼리지 박재연, 최준호의 Full-stack 프로젝트입니다.**
 
 지식그래프 기반의 하이브리드 RAG(Retrieval-Augmented Generation)를 통해 계약서의 위험 조항을 분석하고 질의응답을 제공하는 시스템입니다.
 
------
+---
 
-## 📜 학술 포스터 (Academic Poster)
+## 🖥️ 서비스 주요 화면 (Application Preview)
 
-프로젝트의 전체 아키텍처와 결과를 요약한 포스터입니다.
+사용자는 웹 UI를 통해 계약서 파일을 업로드하고, AI가 분석한 위험 조항을 확인할 수 있습니다. 핵심 기능으로, 문서의 내용을 바탕으로 자동 구축된 **지식그래프(Knowledge Graph)를 시각적으로 탐색**하며 계약서의 복잡한 관계를 직관적으로 파악할 수 있습니다.
 
-*아래 이미지를 클릭하면 고해상도 PDF로 보실 수 있습니다.*
+![Application Screenshot](./assets/application_screenshot.png)
 
-[![Project Poster](./assets/poster_preview.png)](./assets/poster_full.pdf)
-
-## 🏛️ 시스템 아키텍처
-
-<img width="1904" height="1793" alt="Image" src="https://github.com/user-attachments/assets/442cd4e7-4193-4743-8fd0-78a1cfd75e69" />
-
+---
 
 ## 🚀 주요 기능
 
@@ -31,15 +26,6 @@
   * **하이브리드 RAG 검색**: 키워드 기반(BM25/Vector) 검색과 그래프 기반(KG) 검색을 결합한 질의응답
   * **계약서 위험 조항 분석**: 파트별 체크리스트 기반으로 위험 조항을 병렬 처리 후 LLM이 최종 결과 통합
   * **실시간 상태 모니터링**: 파일 처리 및 분석 파이프라인의 진행 상태 실시간 로깅 및 추적
-
-## 🅿️ 핵심 파이프라인
-
-<img width="3840" height="2126" alt="Image" src="https://github.com/user-attachments/assets/51aa53c4-a17a-4a2f-9536-3064f042c458" />
-
-## 🛠️ 기술 스택
-
-  * **백엔드 (BE)**: FastAPI, Neo4j, OpenAI, FAISS
-  * **프런트엔드 (FE)**: React, Vite, shadcn-ui
 
 -----
 
@@ -100,7 +86,38 @@ pnpm run dev
 
   * **개발 서버**: [http://localhost:5173](https://www.google.com/search?q=http://localhost:5173) (Vite 기본 포트)
 
------
+---
+
+## ⚙️ 데이터 처리 및 KG 구축 파이프라인
+
+본 시스템은 업로드된 계약서 문서를 **5단계 파이프라인**을 통해 처리합니다.
+
+1.  **데이터 수집/전처리**: 업로드된 문서(PDF, TXT, DOCX)의 텍스트를 추출하고 정제합니다.
+2.  **지식 추출**: LLM과 NER을 이용해 텍스트에서 핵심 개체(Entity)와 관계(Relation)를 지식(Triple)으로 추출합니다.
+3.  **지식그래프 구축**: 추출된 지식을 Neo4j 스키마에 맞춰 그래프 데이터베이스로 구축합니다.
+4.  **임베딩 생성**: 문서의 청크(Chunk) 단위로 임베딩을 생성합니다.
+5.  **인덱스 구축**: RAG(Retrieval-Augmented Generation)에 최적화된 하이브리드 검색을 위해 FAISS (벡터 인덱스), 그래프 인덱스, 키워드 인덱스를 각각 생성합니다.
+
+![Data Pipeline Architecture](./assets/data_pipeline_architecture.png)
+
+---
+
+## 🛠️ 기술 스택
+
+* **백엔드 (BE)**: FastAPI, Neo4j, OpenAI, FAISS
+* **프런트엔드 (FE)**: React, Vite, shadcn-ui
+
+---
+
+## 📜 학술 포스터 (Academic Poster)
+
+프로젝트의 전체 아키텍처와 결과를 요약한 포스터입니다.
+
+*아래 이미지를 클릭하면 고해상도 PDF로 보실 수 있습니다.*
+
+[![Project Poster](./assets/poster_preview.png)](./assets/poster_full.pdf)
+
+---
 
 ## 📦 레포지토리 구조
 
