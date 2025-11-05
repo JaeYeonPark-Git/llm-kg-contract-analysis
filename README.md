@@ -1,9 +1,10 @@
 # 지식그래프와 LLM 융합 기반 계약서 위험 분석 시스템
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
-[![React](https://img.shields.io/badge/React-61DAFB?logo=react)](https://react.dev/)
-[![Neo4j](https://img.shields.io/badge/Neo4j-008CC1?logo=neo4j)](https://neo4j.com/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite)](https://vitejs.dev/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.111.0-009688?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?logo=react)](https://react.dev/)
+[![Neo4j](https://img.shields.io/badge/Neo4j-5.20-008CC1?logo=neo4j)](https://neo4j.com/)
+[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?logo=graphql&logoColor=white)](https://graphql.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.3.1-646CFF?logo=vite)](https://vitejs.dev/)
 
 **2025 서초 AI 칼리지 박재연, 최준호의 Full-stack 프로젝트입니다.**
 
